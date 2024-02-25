@@ -49,7 +49,7 @@ body {
 .search-container {
   width: 50%;
   display: block;
-  margin: 10% auto;
+  margin: 5% auto;
 }
 
 input#search-bar {
@@ -61,6 +61,7 @@ input#search-bar {
   border: 1px solid black;
   outline: none;
 }
+
 input#search-bar:focus {
   border: 1px solid black;
   transition: 0.35s ease;
@@ -273,4 +274,28 @@ padding-top: 10px;
       width: 1%;
       text-align: center;
   }
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 9999;
+}
+
+.popup input,
+.popup button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.countdown {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
 }

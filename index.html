@@ -17,12 +17,29 @@
 </head>
 <body>
     <header class="site-header">
-        <div class="navbar">
-          <a href="#">About</a>
-          <a href="#">Information</a>
-          <a href="#">Login</a>
-          <a href="#">Sing Up</a>
-      </div>
+      <div class="navbar">
+        <a href="about.html" id="about-link">About</a>
+        <a href="#" id="information-link">Information</a>
+        <a href="#" id="registration-link">Registration</a>
+        <button id="loginButton">Login</button>
+        <div id="loginPopup" class="popup">
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="password" placeholder="Password">
+                <button type="submit" id="loginSubmit">Submit</button>
+            </form>
+            <div id="popupCountdown" class="countdown">Time left: <span id="timeLeft">20</span>s</div>
+        </div>
+        <div id="about-popup" class="popup"> <!-- Dodane -->
+            About
+        </div>
+        <div id="information-popup" class="popup"> <!-- Dodane -->
+            Information
+        </div>
+        <div id="registration-popup" class="popup"> <!-- Dodane -->
+            Registration
+        </div>
+    </div>
     </header> 
     <main>
         <image>
@@ -86,9 +103,8 @@
               </span>
             </a>
           </div>
-          <div class="footer-item">
+          <div class="footer-item"> <!--just empty to move YouTube icon-->
           </div>
-
         </div> <!-- end .footer-content -->
       </div> <!-- end .footer-container -->
     </footer>
