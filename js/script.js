@@ -144,3 +144,8 @@ document.addEventListener("DOMContentLoaded", function() {
       resetTimer(); // Uruchamia timer, gdy mysz opuszcza obszar okienka
   });
 });
+
+function closeLoginPopup() {
+    var loginPopup = document.getElementById("loginPopup");
+    loginPopup.style.display = "none";
+}

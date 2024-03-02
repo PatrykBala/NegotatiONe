@@ -1,0 +1,27 @@
+:root {
+    --background-global: #f9ecdb;
+    --text-color: #000;
+    --line-color: #000;
+    --icon-color: #000;
+    --icons-alignment: center;
+}
+
+/*general*/
+body {
+    font-family: Avenir, sans-serif;
+    background-color: var(--background-global);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  p {
+    max-width: 70ch;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.3;
+  }
+  
