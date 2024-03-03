@@ -5,17 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--css-->
-    <link rel="stylesheet" href="css/about_style.css">
+    <link rel="stylesheet" href="css/registration_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!--js-->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
-    <script src="js/script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="js/registration_script.js"></script>
+    <script src="js/registration_script.js"></script>
     
     <title>Registration</title>
 </head>
-<body>
-    <h1>Registration Negotatione</h1>
-    <p>Text</p>
-</body>
+<header>
+  <div class="back">
+    <a href="index.html" class="btn-back">
+      <div>
+        <svg width="16px" height="14px" viewBox="0 0 16 14">
+          <path d="M1,7 L15,7"></path>
+          <polyline points="7 1 1 7 7 13"></polyline>
+        </svg>
+      </div>
+      <span>Back</span>
+    </a>
+</header>
+<main>
+  <div class='wrap'>
+  <h1>
+      Register
+      <em>and start negotiating</em>
+    </h1>
+    <form action='/'>
+      <label for=''>First Name</label>
+      <input id='f_first' required='required' type='text'>
+      <label for=''>Last Name</label>
+      <input id='f_last' required='required' type='text'>
+      <label for=''>Password</label>
+      <input id='f_password' required='required' type='password'>
+      <label for=''>Confirm Password</label>
+      <input id='f_confirm' required='required' type='password'>
+      <input type='submit' value='Register'>
+      <div class='cb'></div>
+    </form>
+    <div class='messages_required'>
+      <div class='msg' id='first-field'>The field First Name is empty</div>
+      <div class='msg' id='last-field'>The field Last Name is empty</div>
+      <div class='msg' id='password-field'>The field Password is empty</div>
+      <div class='msg' id='confirm-field'>The field Confirm Password doesn't match</div>
+    </div>
+  </div>
+</main>
 </html>
