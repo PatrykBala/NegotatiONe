@@ -10,31 +10,131 @@
     
     <!--js-->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="js/about.js"></script>
-    <script src="js/about.js"></script>
+    <script src="js/about_script.js"></script>
     
     <title>About</title>
 </head>
 <body>
-  <div class="tabs">
-    <div class="tab" id="tab1" onclick="openTab('tab1')">Zakładka 1</div>
-    <div class="tab" id="tab2" onclick="openTab('tab2')">Zakładka 2</div>
-    <div class="tab" id="tab3" onclick="openTab('tab3')">Zakładka 3</div>
+  <header>
   </div>
-
-  <div class="default-text">
-    <p>To jest domyślny tekst, który będzie widoczny na początku.</p>
-  </div>
+    <div class="back">
+      <a href="index.html" class="btn-back">
+        <div>
+          <svg width="16px" height="14px" viewBox="0 0 16 14">
+            <path d="M1,7 L15,7"></path>
+            <polyline points="7 1 1 7 7 13"></polyline>
+          </svg>
+        </div>
+        <span>Back</span>
+      </a>
+  </header>
+  <head>
+    <meta charset="UTF-8">
+    <title>CodePen - Transitioning Between Variable Heights with CSS Tabs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
   
-  <div class="tab-content" id="content-tab1">
-    <p>Treść zakładki 1.</p>
-  </div>
+  </head>
   
-  <div class="tab-content" id="content-tab2" style="display: none;">
-    <p>Treść zakładki 2.</p>
-  </div>
+  <body>
+    <!-- partial:index.partial.html -->
+    <h1>About</h1>
+    <h2>Negotatione</h2>
   
-  <div class="tab-content" id="content-tab3" style="display: none;">
-    <p>Treść zakładki 3.</p>
-  </div>
+    <div class="container">
+  
+      <div class="demo-section">
+        <p>Negotatione is an application designed to bridge the gap between ordering establishments in the food service industry and the sales representatives who supply them with goods.</p>
+      </div>
+  
+      <div class="tab-wrap">
+  
+        <!-- active tab on page load gets checked attribute -->
+        <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+        <label for="tab1">For Buyers</label>
+  
+        <input type="radio" id="tab2" name="tabGroup1" class="tab">
+        <label for="tab2">Negotatione Platform</label>
+  
+        <input type="radio" id="tab3" name="tabGroup1" class="tab">
+        <label for="tab3">For Sellers</label>
+  
+        <div class="tab__content">
+          <h3>For Buyers</h3>
+          <p>At Negotatione, we understand the unique challenges faced by food service establishments when sourcing products. Our platform provides buyers with the tools they need to streamline their procurement process. From browsing a vast catalog of products to negotiating prices and managing invoices, Negotatione simplifies every step of the buying journey. By using our platform, buyers can save time, reduce costs, and focus on delivering exceptional service to their customers.</p>
+        </div>
+  
+        <div class="tab__content">
+          <h3>Negotatione Platform</h3>
+          <p>Negotatione is the central hub that connects food service establishments with their suppliers. Our innovative platform is designed to facilitate seamless communication, efficient order management, and transparent transactions. Whether you are a buyer looking to source products or a seller aiming to reach new customers, Negotatione offers the comprehensive features needed to meet your business needs. Our goal is to create a more connected and efficient food service supply chain, benefiting all parties involved.</p>
+        </div>
+  
+        <div class="tab__content">
+          <h3>For Sellers</h3>
+          <p>Negotatione empowers sellers to expand their reach and manage their sales more effectively. By joining our platform, suppliers gain access to a wide network of food service establishments looking for reliable partners. Sellers can showcase their products, receive orders, negotiate prices, and manage invoices all in one place. With Negotatione, sellers can optimize their sales processes, build stronger customer relationships, and grow their business with ease.</p>
+        </div>
+  
+      </div>
+  
+      <div class="demo-section">
+        <p>The primary goal of our application is to simplify the ordering process and solve communication issues between sales representatives and food service establishments. Ideally, we aim to eliminate the need for phone calls and reduce the necessity for direct contact with sales reps.</p>
+  
+        <p>The idea for Negotatione was inspired by the work of a friend who is a sales representative. He spends his days on the phone taking orders, a process that could be much simpler and more efficient. We believe that with Negotatione, we can transform this cumbersome process into a streamlined, easy-to-manage system.</p>
+      </div>
+  
+      <div class="tab-wrap">
+  
+        <input type="radio" id="tab4" name="tabGroup2" class="tab" checked>
+        <label for="tab4">Our Mission</label>
+  
+        <input type="radio" id="tab5" name="tabGroup2" class="tab">
+        <label for="tab5">Our Vision</label>
+  
+        <input type="radio" id="tab6" name="tabGroup2" class="tab">
+        <label for="tab6">Our Story</label>
+  
+        <input type="radio" id="tab7" name="tabGroup2" class="tab">
+        <label for="tab7">Our Services</label>
+  
+        <input type="radio" id="tab8" name="tabGroup2" class="tab">
+        <label for="tab8">Why Choose Us</label>
+  
+        <div class="tab__content">
+          <h3>Our Mission</h3>
+          <p>Our mission is to revolutionize the way food service establishments interact with their suppliers. By providing a platform that simplifies communication and order management, we aim to create a seamless experience that saves time and reduces stress for both parties involved.</p>
+        </div>
+  
+        <div class="tab__content">
+          <h3>Our Vision</h3>
+          <p>We envision a future where food service establishments can focus on what they do best—serving their customers—while Negotatione takes care of the complexities of supplier management. We strive to be the leading platform that connects the food service industry with suppliers in a way that is efficient, transparent, and beneficial for all.</p>
+        </div>
+  
+        <div class="tab__content">
+          <h3>Our Story</h3>
+          <p>Inspired by a friend who works as a sales representative and spends countless hours on the phone taking orders, we realized there had to be a simpler way. Negotatione was born out of the desire to streamline the ordering process and reduce the need for constant phone calls. Our goal is to transform this cumbersome process into a streamlined, easy-to-manage system.</p>
+        </div>
+  
+        <div class="tab__content">
+          <h3>Our Services</h3>
+          <p>Negotatione offers a range of services designed to meet the needs of both food service establishments and suppliers. From price negotiation and invoice management to product search and order placement, our platform provides all the tools necessary to ensure smooth and efficient transactions. By bridging the gap between buyers and sellers, we create a more connected and efficient food service supply chain.</p>
+        </div>
+  
+        <div class="tab__content">
+          <h3>Why Choose Us</h3>
+          <p>Choosing Negotatione means choosing efficiency, simplicity, and innovation. Our platform is designed with the user in mind, offering intuitive features that make managing orders and supplier relationships a breeze. With Negotatione, you can focus on growing your business while we take care of the rest. Join us and experience a new way of managing your food service supply chain.</p>
+        </div>
+  
+      </div>
+  
+      <div class="demo-section">
+        <p>Negotatione also functions as a comprehensive search engine for products and semi-finished products. Users can easily search for specific items and find suppliers who can provide them. Both buyers and sellers will have accounts on our platform—food service establishments looking for products, and trading companies ready to supply and deliver them.</p>
+      </div>
+  
+    </div>
+    <!-- partial -->
+  
+  </body>
+  
+  </html>
 </body>
 </html>

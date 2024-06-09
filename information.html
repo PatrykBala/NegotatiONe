@@ -5,48 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--css-->
-    <link rel="stylesheet" href="css/information_style.css">
+    <link rel="stylesheet" href="css/about_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!--js-->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
-    <script src="js/information_script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="js/about.js"></script>
+    <script src="js/about.js"></script>
     
     <title>Information</title>
 </head>
-<header>
-  <div class="back">
-    <a href="index.html" class="btn-back">
-      <div>
-        <svg width="16px" height="14px" viewBox="0 0 16 14">
-          <path d="M1,7 L15,7"></path>
-          <polyline points="7 1 1 7 7 13"></polyline>
-        </svg>
-      </div>
-      <span>Back</span>
-    </a>
-</header>
 <body>
-    <div class="tabs">
-        <div class="tab" id="tab1" onclick="openTab('tab1')">Zakładka 1</div>
-        <div class="tab" id="tab2" onclick="openTab('tab2')">Zakładka 2</div>
-        <div class="tab" id="tab3" onclick="openTab('tab3')">Zakładka 3</div>
+  <header>
+    <div class="back">
+      <a href="index.html" class="btn-back">
+        <div>
+          <svg width="16px" height="14px" viewBox="0 0 16 14">
+            <path d="M1,7 L15,7"></path>
+            <polyline points="7 1 1 7 7 13"></polyline>
+          </svg>
+        </div>
+        <span>Back</span>
+      </a>
+  </header>
+  <head>
+    <meta charset="UTF-8">
+    <title>CodePen - Transitioning Between Variable Heights with CSS Tabs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+  
+  </head>
+  
+  <body>
+    <!-- partial:index.partial.html -->
+    <h1>Information</h1>
+    <h2>Negotatione</h2>
+  
+    <div class="container">
+  
+      <div class="demo-section">
+        <p>Negotatione is your go-to platform for revolutionizing the way food service establishments interact with their suppliers. Whether you're a buyer looking for the best deals or a seller aiming to reach new customers, Negotatione offers a comprehensive solution tailored to your needs.</p>
+      </div>
+  
+      <div class="tab-wrap">
+  
+        <!-- active tab on page load gets checked attribute -->
+        <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+        <label for="tab1">User Registration and Login</label>
+  
+        <input type="radio" id="tab2" name="tabGroup1" class="tab">
+        <label for="tab2">Search Functionality</label>
+  
+        <input type="radio" id="tab3" name="tabGroup1" class="tab">
+        <label for="tab3">Transaction Management</label>
+  
+        <div class="tab__content">
+          <h3>User Registration and Login</h3>
+          <p>Get started with Negotatione by creating your account. Our user-friendly registration process allows you to sign up quickly and securely. Already have an account? Simply log in to access all the features and functionalities of Negotatione.</p>
+        </div>
+  
+        <div class="tab__content">
+          <h3>Search Functionality</h3>
+          <p>Explore our powerful search engine, designed to help you find the products you need quickly and easily. With advanced search filters and intuitive navigation, locating specific items and suppliers has never been simpler. Whether you're searching for ingredients, equipment, or other essentials, Negotatione has you covered.</p>
+        </div>
+  
+        <div class="tab__content">
+          <h3>Transaction Management</h3>
+          <p>Negotatione simplifies transaction management for buyers and sellers in the food service industry. Our platform offers seamless purchase tracking, invoice management, negotiation, and settlement features, ensuring transparent and efficient dealings between all parties involved. With secure payments, transparent reporting, and dedicated customer support, Negotatione makes transaction management a breeze for businesses of all sizes.</p>
+        </div>
+  
+      </div>
+  
+      <div class="demo-section">
+        <p>Ready to experience the benefits of Negotatione for yourself? Sign up now and join our growing community of buyers and sellers. With Negotatione, managing your food service supply chain has never been easier or more efficient. Join us today and discover a new way of doing business!</p>
+  
+        <p>The inception of Negotatione stemmed from a deep-seated need to revolutionize the laborious process of order management. Inspired by the challenges faced by a friend working as a sales representative, who spent considerable time on manual order taking over the phone, we recognized the urgent need for a more efficient and user-friendly solution. With Negotatione, our mission is to revolutionize this process, providing businesses with a streamlined and intuitive platform that saves time, enhances productivity, and fosters growth.</p>
+      </div>
+  
+      <div class="tab-wrap">
+  
+        <input type="radio" id="tab4" name="tabGroup2" class="tab" checked>
+        <label for="tab4">Purchase Tracking</label>
+  
+        <input type="radio" id="tab5" name="tabGroup2" class="tab">
+        <label for="tab5">Invoice Management</label>
+  
+        <input type="radio" id="tab6" name="tabGroup2" class="tab">
+        <label for="tab6">Negotiation and Settlement</label>
+  
+        <input type="radio" id="tab7" name="tabGroup2" class="tab">
+        <label for="tab7">Secure Payments</label>
+  
+        <div class="tab__content">
+          <h3>Purchase Tracking</h3>
+          <p>Keep track of all your purchases with Negotatione's intuitive transaction management system. From placing orders to receiving deliveries, our platform allows you to monitor every step of the procurement process with ease.</p>
+        </div>
+  
+        <div class="tab__content">
+          <h3>Invoice Management</h3>
+          <p>Simplify your accounting processes with Negotatione's integrated invoice management tool. Easily generate, send, and track invoices for your purchases, ensuring accurate and timely payments every time.</p>
+        </div>
+  
+        <div class="tab__content">
+          <h3>Negotiation and Settlement</h3>
+          <p>Negotatione provides a platform for buyers and sellers to negotiate terms and settle transactions efficiently. Whether it's negotiating prices, setting payment terms, or resolving disputes, our platform facilitates transparent and fair dealings between all parties involved.</p>
+        </div>
+  
+        <div class="tab__content">
+          <h3>Secure Payments</h3>
+          <p>Rest assured that your payments are secure with Negotatione's trusted payment gateway. Our platform supports a variety of payment methods, allowing you to choose the option that works best for you. With secure transactions and encrypted data, you can shop with confidence on Negotatione.</p>
+        </div>
+  
+      </div>
+  
+      <div class="demo-section">
+        <p>Negotatione also serves as a hub for fostering collaboration between buyers and sellers in the food service industry. It facilitates seamless connections, allowing users to discover and engage with a wide range of products and suppliers. Our platform caters to the needs of both food service establishments seeking quality products and trading companies ready to meet their demands. With dedicated accounts for both buyers and sellers, Negotatione offers a streamlined approach to sourcing and procurement.</p>
+      </div>
+  
     </div>
-
-    <div class="default-text">
-        <p>To jest domyślny tekst, który będzie widoczny na początku.</p>
-    </div>
-      
-      <div class="tab-content" id="content-tab1">
-        <p>Treść zakładki 1.</p>
-      </div>
-      
-      <div class="tab-content" id="content-tab2" style="display: none;">
-        <p>Treść zakładki 2.</p>
-      </div>
-      
-      <div class="tab-content" id="content-tab3" style="display: none;">
-        <p>Treść zakładki 3.</p>
-      </div>
+    <!-- partial -->
+  
+  </body>
+  
+  </html>
 </body>
 </html>
